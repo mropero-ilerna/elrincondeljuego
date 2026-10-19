@@ -157,7 +157,8 @@ textarea {
 }
 
 .top-bar-content,
-.top-bar-icons {
+.top-bar-icons,
+.top-bar-actions {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -186,6 +187,24 @@ textarea {
 }
 
 .top-bar-icons a:hover {
+    background: rgb(255 255 255 / 12%);
+    color: var(--color-acento);
+}
+
+.top-bar-actions a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: 1px solid rgb(255 255 255 / 35%);
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.top-bar-actions a:hover,
+.top-bar-actions a:focus-visible {
     background: rgb(255 255 255 / 12%);
     color: var(--color-acento);
 }
@@ -314,14 +333,15 @@ footer p {
     color: #d5d6df;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1000px) {
     .top-bar {
         flex-direction: column;
         gap: 12px;
         padding-block: 16px;
     }
 
-    .top-bar-content {
+    .top-bar-content,
+    .top-bar-actions {
         flex-wrap: wrap;
         justify-content: center;
     }
