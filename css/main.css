@@ -195,6 +195,83 @@ main {
     padding-block: 40px 64px;
 }
 
+.catalogo {
+    display: grid;
+    width: min(90%, var(--ancho-contenido));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 280px));
+    align-content: start;
+    justify-content: center;
+    gap: 24px;
+    margin-inline: auto;
+}
+
+.card {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    background: var(--color-superficie);
+    box-shadow: var(--sombra);
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 32px rgb(32 34 53 / 14%);
+}
+
+.card__image {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    background: #202235;
+}
+
+.card__content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.card__title {
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+}
+
+.card__subtitle,
+.card__subtitle2,
+.card__subtitles3 {
+    display: inline-flex;
+    margin: 0 6px 12px 0;
+    padding: 3px 9px;
+    border: 1px solid var(--color-borde);
+    border-radius: 999px;
+    background: var(--color-fondo);
+    color: var(--color-texto-secundario);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.card__description {
+    margin: 0 0 16px;
+}
+
+.card__price {
+    margin-top: auto;
+    margin-bottom: 14px;
+    color: var(--color-principal);
+    font-size: 1.35rem;
+    font-weight: 800;
+}
+
+.card__button {
+    width: 100%;
+}
+
 .contenedor-cajas,
 .tarjetas {
     display: grid;
