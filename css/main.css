@@ -316,6 +316,29 @@ main {
     margin-top: 56px;
 }
 
+.sobre-nosotros {
+    margin-top: 56px;
+}
+
+.sobre-nosotros__valor h3 {
+    margin: 14px 0 8px;
+}
+
+.sobre-nosotros__valor p {
+    margin-bottom: 0;
+}
+
+.sobre-nosotros__icono {
+    display: grid;
+    width: 48px;
+    height: 48px;
+    place-items: center;
+    border-radius: 12px;
+    background: rgb(87 65 166 / 10%);
+    color: var(--color-principal);
+    font-size: 1.2rem;
+}
+
 .inicio-seccion-cabecera {
     display: flex;
     align-items: end;
@@ -564,6 +587,10 @@ footer p {
     }
 
     .inicio-destacados {
+        margin-top: 40px;
+    }
+
+    .sobre-nosotros {
         margin-top: 40px;
     }
 
