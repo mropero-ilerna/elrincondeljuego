@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>El rincon del juego</title>
+    <title>Inicio | El Rincón del Juego</title>
 </head>
 <body>
     <header class="top-bar">
@@ -13,7 +13,7 @@
         <div class="top-bar-content">
         <a href="index.html">Inicio</a>
         <a href="catalago.html">Catálogo</a>
-        <a href="contacto.html">contacto</a>
+        <a href="contacto.html">Contacto</a>
         <a href="sobrenosotros.html">Sobre nosotros</a>
         </div>
         <div class="top-bar-icons">
@@ -27,6 +27,52 @@
         <a href="login.html"><i class="fas fa-user" aria-hidden="true"></i> Mi cuenta</a>
         </div>
     </header>
+    <main class="inicio">
+        <section class="inicio-hero contenedor" aria-labelledby="inicio-titulo">
+            <div class="inicio-hero__contenido">
+                <span class="inicio-etiqueta"><i class="fas fa-gamepad" aria-hidden="true"></i> Tu próxima aventura empieza aquí</span>
+                <h1 id="inicio-titulo">Entra en el juego.</h1>
+                <p>Descubre tus próximos juegos favoritos y encuentra novedades para tu consola.</p>
+                <a class="boton" href="catalago.html">Explorar catálogo <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+            <div class="inicio-hero__icono" aria-hidden="true">
+                <i class="fas fa-gamepad"></i>
+            </div>
+        </section>
 
+        <nav class="inicio-plataformas contenedor" aria-label="Explorar por consola">
+            <a href="catalago.html"><i class="fas fa-gamepad" aria-hidden="true"></i> Nintendo Switch</a>
+            <a href="catalago.html"><i class="fab fa-playstation" aria-hidden="true"></i> PlayStation</a>
+            <a href="catalago.html"><i class="fas fa-desktop" aria-hidden="true"></i> PC</a>
+            <a href="catalago.html"><i class="fab fa-xbox" aria-hidden="true"></i> Xbox</a>
+        </nav>
+
+        <section class="inicio-destacados contenedor" aria-labelledby="destacados-titulo">
+            <div class="inicio-seccion-cabecera">
+                <div>
+                    <span class="inicio-seccion-cabecera__eyebrow">Para tu próxima partida</span>
+                    <h2 id="destacados-titulo">Juego destacado</h2>
+                </div>
+                <a href="catalago.html">Ver catálogo <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+            <article class="inicio-juego">
+                <img src="img/portada_juego.webp" alt="Portada de Battlefield 2042">
+                <div class="inicio-juego__contenido">
+                    <span class="inicio-juego__etiqueta">Acción · Shooter</span>
+                    <h3>Battlefield 2042</h3>
+                    <p>Prepárate para el combate en este shooter de guerra moderna.</p>
+                    <div class="inicio-juego__plataformas" aria-label="Disponible para Xbox One, PlayStation 4 y PC">
+                        <span>Xbox One</span>
+                        <span>PlayStation 4</span>
+                        <span>PC</span>
+                    </div>
+                    <a class="boton" href="catalago.html">Ver en el catálogo</a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; El Rincón del Juego</p>
+    </footer>
 </body>
 </html>
