@@ -417,14 +417,200 @@ main {
     font-weight: 700;
 }
 
+.catalogo-pagina {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.catalogo-cabecera {
+    padding: clamp(24px, 5vw, 48px);
+    border-radius: 20px;
+    background: linear-gradient(120deg, #202235, #39305f 68%, #5741a6);
+    color: #ffffff;
+}
+
+.catalogo-cabecera h1 {
+    margin-block: 10px;
+    color: #ffffff;
+}
+
+.catalogo-cabecera > p {
+    max-width: 620px;
+    color: #e0deeb;
+}
+
+.catalogo-navegacion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.catalogo-navegacion a {
+    padding: 8px 14px;
+    border: 1px solid rgb(255 255 255 / 35%);
+    border-radius: 999px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.catalogo-navegacion a:hover,
+.catalogo-navegacion a:focus-visible {
+    background: rgb(255 255 255 / 12%);
+    color: var(--color-acento);
+}
+
+.catalogo-seccion {
+    scroll-margin-top: 24px;
+}
+
+.catalogo-seccion__cabecera {
+    margin-bottom: 24px;
+}
+
+.catalogo-seccion__cabecera h2 {
+    margin: 6px 0 0;
+}
+
 .catalogo {
     display: grid;
-    width: min(90%, var(--ancho-contenido));
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 280px));
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 280px));
     align-content: start;
     justify-content: center;
     gap: 24px;
-    margin-inline: auto;
+}
+
+.catalogo-plataformas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+    gap: 20px;
+}
+
+.catalogo-plataforma {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    background: var(--color-superficie);
+    box-shadow: var(--sombra);
+}
+
+.catalogo-plataforma h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.catalogo-plataforma__juegos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.catalogo-plataforma__juegos .card__content {
+    padding: 12px;
+}
+
+.catalogo-plataforma__juegos .card__title {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.catalogo-plataforma__boton {
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+.catalogo-todos {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+}
+
+.catalogo-todos .card__image {
+    aspect-ratio: 4 / 3;
+}
+
+.card__art {
+    display: grid;
+    min-height: 150px;
+    aspect-ratio: 4 / 3;
+    place-items: center;
+    padding: 16px;
+    background: linear-gradient(135deg, #202235, #5741a6);
+    color: #ffffff;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    font-weight: 800;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.card__art--zelda {
+    background: linear-gradient(145deg, #344d36, #b08a42 58%, #202235);
+}
+
+.card__art--mario {
+    background: linear-gradient(145deg, #d94343, #f2c94c);
+}
+
+.card__art--animal-crossing {
+    background: linear-gradient(145deg, #7bbd7b, #62b6bd);
+}
+
+.card__art--halo {
+    background: linear-gradient(145deg, #536c50, #243b4d 60%, #202235);
+}
+
+.card__art--forza {
+    background: linear-gradient(145deg, #ce5141, #5741a6);
+}
+
+.card__art--astro {
+    background: linear-gradient(145deg, #46a9d5, #244e90 60%, #202235);
+}
+
+.card__art--gran-turismo {
+    background: linear-gradient(145deg, #586d96, #202235 65%);
+}
+
+.card__art--counter-strike {
+    background: linear-gradient(145deg, #b47a3b, #433528 60%, #202235);
+}
+
+.card__art--dota {
+    background: linear-gradient(145deg, #9c3f36, #522b2b 60%, #202235);
+}
+
+.card__badge {
+    display: inline-flex;
+    padding: 3px 9px;
+    border-radius: 999px;
+    background: #eeecf8;
+    color: var(--color-principal);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.catalogo-pagina__volver {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.catalogo-todos__cabecera {
+    margin-bottom: 32px;
+}
+
+.catalogo-todos__cabecera h1 {
+    margin-block: 8px;
+}
+
+.catalogo-todos__cabecera p {
+    max-width: 680px;
 }
 
 .card {
