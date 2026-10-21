@@ -27,6 +27,85 @@
             <a href="login.html"><i class="fas fa-user" aria-hidden="true"></i> Mi cuenta</a>
         </div>
     </header>
+    <main class="inicio">
+        <section class="inicio-hero contenedor" aria-labelledby="contacto-titulo">
+            <div class="inicio-hero__contenido">
+                <span class="inicio-etiqueta"><i class="fas fa-comments" aria-hidden="true"></i> Estamos para ayudarte</span>
+                <h1 id="contacto-titulo">Hablemos de tu próxima partida</h1>
+                <p>¿Tienes una duda sobre un juego o necesitas ayuda con tu pedido? Cuéntanos qué necesitas y te orientaremos.</p>
+                <a class="boton" href="#formulario-contacto">Escríbenos <i class="fas fa-arrow-down" aria-hidden="true"></i></a>
+            </div>
+            <div class="inicio-hero__icono" aria-hidden="true">
+                <i class="fas fa-headset"></i>
+            </div>
+        </section>
+
+        <section class="contacto contenedor" aria-labelledby="contacto-seccion-titulo">
+            <div class="inicio-seccion-cabecera">
+                <div>
+                    <span class="inicio-seccion-cabecera__eyebrow">Contacto</span>
+                    <h2 id="contacto-seccion-titulo">¿En qué podemos ayudarte?</h2>
+                </div>
+            </div>
+            <div class="contacto__contenido">
+                <div class="contacto__informacion">
+                    <article class="contacto__tarjeta">
+                        <span class="contacto__icono" aria-hidden="true"><i class="fas fa-box-open"></i></span>
+                        <div>
+                            <h3>Pedidos</h3>
+                            <p>Si tu consulta está relacionada con un pedido, indícanos su referencia en el mensaje.</p>
+                        </div>
+                    </article>
+                    <article class="contacto__tarjeta">
+                        <span class="contacto__icono" aria-hidden="true"><i class="fas fa-gamepad"></i></span>
+                        <div>
+                            <h3>Juegos y plataformas</h3>
+                            <p>Pregúntanos por títulos del catálogo, plataformas disponibles o recomendaciones.</p>
+                        </div>
+                    </article>
+                    <article class="contacto__tarjeta contacto__nota">
+                        <i class="fas fa-info-circle" aria-hidden="true"></i>
+                        <p>No incluyas datos de pago ni otra información confidencial en tu mensaje.</p>
+                    </article>
+                </div>
+
+                <form class="contacto__formulario" id="formulario-contacto" method="post">
+                    <h3>Envíanos tu consulta</h3>
+                    <p>Completa los campos obligatorios para que podamos ayudarte.</p>
+                    <div class="contacto__campos">
+                        <div class="contacto__campo">
+                            <label for="contacto-nombre">Nombre <span aria-hidden="true">*</span></label>
+                            <input id="contacto-nombre" name="nombre" type="text" autocomplete="name" required>
+                        </div>
+                        <div class="contacto__campo">
+                            <label for="contacto-email">Correo electrónico <span aria-hidden="true">*</span></label>
+                            <input id="contacto-email" name="email" type="email" autocomplete="email" required>
+                        </div>
+                        <div class="contacto__campo">
+                            <label for="contacto-telefono">Teléfono <span class="contacto__opcional">(opcional)</span></label>
+                            <input id="contacto-telefono" name="telefono" type="tel" autocomplete="tel">
+                        </div>
+                        <div class="contacto__campo">
+                            <label for="contacto-motivo">Motivo de la consulta <span aria-hidden="true">*</span></label>
+                            <select id="contacto-motivo" name="motivo" required>
+                                <option value="" selected disabled>Selecciona una opción</option>
+                                <option value="pedido">Consulta sobre un pedido</option>
+                                <option value="catalogo">Juegos y catálogo</option>
+                                <option value="recomendacion">Recomendación</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="contacto__campo contacto__campo--completo">
+                            <label for="contacto-mensaje">Mensaje <span aria-hidden="true">*</span></label>
+                            <textarea id="contacto-mensaje" name="mensaje" rows="6" required></textarea>
+                        </div>
+                    </div>
+                    <p class="contacto__requeridos"><span aria-hidden="true">*</span> Campos obligatorios</p>
+                    <button type="submit">Enviar consulta <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
     <footer class="site-footer">
         <div class="site-footer__content contenedor">
             <div class="site-footer__brand">
