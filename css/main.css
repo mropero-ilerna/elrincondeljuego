@@ -26,6 +26,8 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     margin: 0;
     background: var(--color-fondo);
@@ -210,6 +212,7 @@ textarea {
 }
 
 main {
+    flex: 1;
     min-height: 60vh;
     padding-block: 40px 64px;
 }
@@ -521,14 +524,53 @@ main {
     object-fit: cover;
 }
 
-footer {
-    padding: 28px 5%;
+.site-footer {
+    margin-top: auto;
     background: #202235;
     color: #ffffff;
+}
+
+.site-footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding-block: 32px;
+}
+
+.site-footer__brand > a {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.site-footer__brand p {
+    margin: 6px 0 0;
+    color: #d5d6df;
+}
+
+.site-footer__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+}
+
+.site-footer__links a {
+    color: #ffffff;
+}
+
+.site-footer__links a:hover,
+.site-footer__links a:focus-visible {
+    color: var(--color-acento);
+}
+
+.site-footer__legal {
+    padding: 14px 5%;
+    border-top: 1px solid rgb(255 255 255 / 15%);
     text-align: center;
 }
 
-footer p {
+.site-footer__legal p {
     margin: 0;
     color: #d5d6df;
 }
@@ -567,6 +609,12 @@ footer p {
 
     .inicio-hero__icono {
         display: none;
+    }
+
+    .site-footer__content {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
