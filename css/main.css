@@ -152,7 +152,8 @@ textarea {
     color: #ffffff;
 }
 
-.top-bar > img {
+.top-bar > img,
+.top-bar > a > img {
     width: 150px;
     max-height: 60px;
     object-fit: contain;
@@ -508,6 +509,7 @@ main {
     font-weight: 700;
 }
 
+.inicio-juego h1,
 .inicio-juego h3 {
     margin: 8px 0;
     font-size: 1.7rem;
@@ -532,6 +534,123 @@ main {
     color: var(--color-texto-secundario);
     font-size: 0.8rem;
     font-weight: 700;
+}
+
+.ficha-juego {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding-block: 150px 64px;
+    background: #202235;
+    color: #ffffff;
+}
+
+.ficha-juego::before {
+    position: absolute;
+    z-index: -1;
+    inset: 0 0 auto;
+    height: 340px;
+    background:
+        linear-gradient(180deg, rgb(32 34 53 / 12%), #202235 100%),
+        var(--ficha-portada) center 38% / cover no-repeat;
+    content: "";
+}
+
+.ficha-juego > .contenedor {
+    width: min(92%, 960px);
+}
+
+.ficha-juego .catalogo-pagina__volver {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.ficha-juego .inicio-juego {
+    grid-template-columns: minmax(240px, 0.9fr) minmax(0, 1.1fr);
+    border-color: rgb(255 255 255 / 12%);
+    background: #30313b;
+    box-shadow: 0 18px 42px rgb(0 0 0 / 24%);
+}
+
+.ficha-juego .inicio-juego > img,
+.ficha-juego .inicio-juego > .card__art {
+    min-height: 340px;
+}
+
+.ficha-juego .inicio-juego__contenido {
+    justify-content: center;
+}
+
+.ficha-juego .inicio-juego__etiqueta {
+    color: #f2c94c;
+}
+
+.ficha-juego .inicio-juego h1 {
+    color: #ffffff;
+}
+
+.ficha-juego .inicio-juego__contenido > p {
+    color: #d5d6df;
+}
+
+.ficha-juego .inicio-juego__plataformas span {
+    border-color: rgb(255 255 255 / 18%);
+    background: rgb(255 255 255 / 8%);
+    color: #ffffff;
+}
+
+.ficha-juego .boton {
+    background: #fa5635;
+    color: #ffffff;
+}
+
+.ficha-juego .boton:hover {
+    background: #e9472a;
+}
+
+.ficha-juego__detalles {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(220px, 0.8fr);
+    gap: 32px;
+    margin-top: 36px;
+}
+
+.ficha-juego__detalles h2 {
+    margin-bottom: 14px;
+    color: #ffffff;
+    font-size: 1.35rem;
+}
+
+.ficha-juego__detalles p {
+    margin-bottom: 0;
+    color: #c5c6d0;
+}
+
+.ficha-juego__datos {
+    display: grid;
+    gap: 12px;
+    align-content: start;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid rgb(255 255 255 / 12%);
+    border-radius: var(--radio);
+    background: rgb(255 255 255 / 5%);
+}
+
+.ficha-juego__datos > div {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 12px;
+}
+
+.ficha-juego__datos dt {
+    color: #aeb0bd;
+}
+
+.ficha-juego__datos dd {
+    margin: 0;
+    color: #ffffff;
+    font-weight: 600;
 }
 
 .catalogo-pagina {
@@ -732,6 +851,7 @@ main {
 
 .card {
     display: flex;
+    position: relative;
     min-width: 0;
     flex-direction: column;
     overflow: hidden;
@@ -740,6 +860,27 @@ main {
     background: var(--color-superficie);
     box-shadow: var(--sombra);
     transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.card--link {
+    color: var(--color-texto);
+    text-decoration: none;
+}
+
+.card--link:hover {
+    color: var(--color-texto);
+}
+
+.card__link-overlay {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    border-radius: inherit;
+}
+
+.card__button {
+    position: relative;
+    z-index: 2;
 }
 
 .card:hover {
@@ -974,10 +1115,30 @@ main {
         grid-template-columns: 1fr;
     }
 
+    .ficha-juego {
+        padding-block: 110px 44px;
+    }
+
+    .ficha-juego .inicio-juego {
+        grid-template-columns: 1fr;
+    }
+
     .inicio-juego > img {
         height: 260px;
         min-height: 0;
         object-position: center 35%;
+    }
+
+    .ficha-juego .inicio-juego > img,
+    .ficha-juego .inicio-juego > .card__art {
+        height: 300px;
+        min-height: 0;
+    }
+
+    .ficha-juego__detalles {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        margin-top: 28px;
     }
 
     .contenedor {

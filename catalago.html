@@ -35,10 +35,10 @@
             <nav class="catalogo-navegacion" aria-label="Secciones del catálogo">
                 <a href="#tendencias">Tendencias</a>
                 <a href="#reservas">Reservas</a>
-                <a href="#switch">Nintendo Switch</a>
-                <a href="#xbox">Xbox</a>
-                <a href="#playstation">PlayStation</a>
-                <a href="#pc">PC</a>
+                <a href="switch.html">Nintendo Switch</a>
+                <a href="xbox.html">Xbox</a>
+                <a href="playstation.html">PlayStation</a>
+                <a href="pc.html">PC</a>
             </nav>
         </header>
         <section class="catalogo-seccion" id="tendencias" aria-labelledby="tendencias-titulo">
@@ -50,6 +50,7 @@
             </div>
             <div class="catalogo">
         <div class="card" id="battlefield-2042">
+            <a class="card__link-overlay" href="battlefield-2042.html" aria-label="Ver detalles de Battlefield 2042"></a>
             <img src="img/portada_juego.webp" alt="Juego Battlefield 2042" class="card__image">
         <div class="card__content">
             <h3 class="card__title">Battlefield 2042</h3>
@@ -63,6 +64,7 @@
         </div>
         </div>
         <div class="card" id="gta-san-andreas">
+            <a class="card__link-overlay" href="gta-san-andreas.html" aria-label="Ver detalles de Grand Theft Auto: San Andreas"></a>
             <img src="img/portadasanandreas.webp" alt="Juego GTA San Andreas" class="card__image">
         <div class="card__content">
             <h3 class="card__title">Grand Theft Auto San Andreas</h3>
@@ -77,6 +79,7 @@
         </div>
         </div>
         <div class="card" id="red-dead-redemption-2">
+            <a class="card__link-overlay" href="red-dead-redemption-2.html" aria-label="Ver detalles de Red Dead Redemption II"></a>
             <img src="img/readdeadport.jpg" alt="Juego Read Dead Redemption II" class="card__image">
         <div class="card__content">
             <h3 class="card__title">Red Dead Redemption II</h3>
@@ -91,6 +94,7 @@
         </div>
         </div>
         <div class="card" id="cyberpunk-2077">
+            <a class="card__link-overlay" href="cyberpunk-2077.html" aria-label="Ver detalles de Cyberpunk 2077 Ultimate Edition"></a>
             <img src="img/ciberpunkport.webp" alt="Juego ciberpunk 2077 Ultime Edition" class="card__image">
         <div class="card__content">
             <h3 class="card__title">Ciber Punk 2077 Ultime Edition</h3>
@@ -105,6 +109,7 @@
         </div>
         </div>
         <div class="card" id="manhunt">
+            <a class="card__link-overlay" href="manhunt.html" aria-label="Ver detalles de Manhunt"></a>
             <img src="img/manhuntport.webp" alt="Juego Mahunt" class="card__image">
         <div class="card__content">
             <h3 class="card__title">Manhunt</h3>
@@ -119,6 +124,7 @@
         </div>
         </div>
         <div class="card" id="minecraft">
+            <a class="card__link-overlay" href="minecraft.html" aria-label="Ver detalles de Minecraft"></a>
             <img src="img/minecraftport.webp" alt="Juego Minecraft" class="card__image">
         <div class="card__content">
             <h3 class="card__title">Minecraft</h3>
@@ -143,7 +149,8 @@
             </div>
             <div class="catalogo">
         <div class="card" id="resident-evil-requiem">
-            <img src="img/residentpory.webp" alt="Juego Resident Evil Requiem" class="card__image">
+            <a class="card__link-overlay" href="resident-evil-requiem.html" aria-label="Ver detalles de Resident Evil Requiem"></a>
+            <img src="img/residentpory.jpg" alt="Juego Resident Evil Requiem" class="card__image">
         <div class="card__content">
             <h3 class="card__title">Resident Evil Requiem</h3>
             <h6 class="card__subtitle">Xbox Series X|S</h6>
@@ -169,80 +176,87 @@
                 <section class="catalogo-plataforma" id="switch" aria-labelledby="switch-titulo">
                     <h3 id="switch-titulo"><i class="fas fa-gamepad" aria-hidden="true"></i> Nintendo Switch</h3>
                     <div class="catalogo-plataforma__juegos">
-                        <article class="card">
-                            <div class="card__art card__art--zelda" aria-hidden="true">The Legend of Zelda<br>Breath of the Wild</div>
+                        <a class="card card--link" href="zelda-breath-of-the-wild.html">
+                            <img src="img/zeldaport.webp" alt="Portada de The Legend of Zelda: Breath of the Wild" class="card__image">
                             <div class="card__content">
                                 <h4 class="card__title">The Legend of Zelda: Breath of the Wild</h4>
                                 <span class="card__badge">Exclusivo Nintendo</span>
                             </div>
-                        </article>
-                        <article class="card">
-                            <div class="card__art card__art--mario" aria-hidden="true">Mario Kart 8 Deluxe</div>
+                        </a>
+                        <a class="card card--link" href="mario-kart-8-deluxe.html">
+                            <img src="img/kart.webp" alt="Portada de Mario Kart 8 Deluxe" class="card__image">
                             <div class="card__content">
                                 <h4 class="card__title">Mario Kart 8 Deluxe</h4>
                                 <span class="card__badge">Exclusivo Nintendo</span>
                             </div>
-                        </article>
+                        </a>
+                        <a class="card card--link" href="animal-crossing-new-horizons.html">
+                            <img src="img/crossing.webp" alt="Portada de Animal Crossing: New Horizons" class="card__image">
+                            <div class="card__content">
+                                <h4 class="card__title">Animal Crossing: New Horizons</h4>
+                                <span class="card__badge">Exclusivo Nintendo</span>
+                            </div>
+                        </a>
                     </div>
                     <a class="boton catalogo-plataforma__boton" href="switch.html">Mostrar todos los juegos <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                 </section>
                 <section class="catalogo-plataforma" id="xbox" aria-labelledby="xbox-titulo">
                     <h3 id="xbox-titulo"><i class="fab fa-xbox" aria-hidden="true"></i> Xbox</h3>
                     <div class="catalogo-plataforma__juegos">
-                        <article class="card">
-                            <div class="card__art card__art--halo" aria-hidden="true">Halo Infinite</div>
+                        <a class="card card--link" href="halo-infinite.html">
+                            <img src="img/halo.webp" alt="Portada de Halo Infinite" class="card__image">
                             <div class="card__content">
                                 <h4 class="card__title">Halo Infinite</h4>
                                 <span class="card__badge">Xbox y PC</span>
                             </div>
-                        </article>
-                        <article class="card">
-                            <div class="card__art card__art--forza" aria-hidden="true">Forza Motorsport</div>
+                        </a>
+                        <a class="card card--link" href="forza-motorsport.html">
+                            <img src="img/forza.webp" alt="Portada de Forza Motorsport" class="card__image">
                             <div class="card__content">
                                 <h4 class="card__title">Forza Motorsport</h4>
                                 <span class="card__badge">Xbox y PC</span>
                             </div>
-                        </article>
+                        </a>
                     </div>
                     <a class="boton catalogo-plataforma__boton" href="xbox.html">Mostrar todos los juegos <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                 </section>
                 <section class="catalogo-plataforma" id="playstation" aria-labelledby="playstation-titulo">
                     <h3 id="playstation-titulo"><i class="fab fa-playstation" aria-hidden="true"></i> PlayStation</h3>
                     <div class="catalogo-plataforma__juegos">
-                        <article class="card">
-                            <div class="card__art card__art--astro" aria-hidden="true">ASTRO BOT</div>
+                        <a class="card card--link" href="astro-bot.html">
+                            <img src="img/astro.webp" alt="Portada de Astro Bot" class="card__image">
                             <div class="card__content">
                                 <h4 class="card__title">Astro Bot</h4>
                                 <span class="card__badge">Exclusivo PlayStation 5</span>
                             </div>
-                        </article>
-                        <article class="card">
-                            <div class="card__art card__art--gran-turismo" aria-hidden="true">Gran Turismo 7</div>
+                        </a>
+                        <a class="card card--link" href="gran-turismo-7.html">
+                            <img src="img/turismo.webp" alt="Portada de Gran Turismo 7" class="card__image">
                             <div class="card__content">
                                 <h4 class="card__title">Gran Turismo 7</h4>
                                 <span class="card__badge">Exclusivo PlayStation</span>
                             </div>
-                        </article>
+                        </a>
                     </div>
                     <a class="boton catalogo-plataforma__boton" href="playstation.html">Mostrar todos los juegos <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                 </section>
                 <section class="catalogo-plataforma" id="pc" aria-labelledby="pc-titulo">
                     <h3 id="pc-titulo"><i class="fas fa-desktop" aria-hidden="true"></i> PC</h3>
                     <div class="catalogo-plataforma__juegos">
-                        <article class="card">
-                            <div class="card__art card__art--counter-strike" aria-hidden="true">Counter-Strike 2</div>
+                        <a class="card card--link" href="counter-strike-2.html">
+                            <img src="img/counter2.webp" alt="Portada de Counter-Strike 2" class="card__image">
                             <div class="card__content">
                                 <h4 class="card__title">Counter-Strike 2</h4>
                                 <span class="card__badge">Exclusivo de PC</span>
                             </div>
-                        </article>
-                        <article class="card">
-                            <div class="card__art card__art--dota" aria-hidden="true">DOTA 2</div>
+                        </a>
+                        <a class="card card--link" href="dota-2.html">
+                            <img src="img/dota2.webp" alt="Portada de Dota 2" class="card__image">
                             <div class="card__content">
                                 <h4 class="card__title">Dota 2</h4>
                                 <span class="card__badge">Exclusivo de PC</span>
                             </div>
-                        </article>
+                        </a>
                     </div>
                     <a class="boton catalogo-plataforma__boton" href="pc.html">Mostrar todos los juegos <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                 </section>

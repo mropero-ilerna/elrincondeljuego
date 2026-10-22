@@ -7,6 +7,7 @@ Sitio web estático de una tienda de videojuegos. Permite explorar un catálogo 
 - **Inicio** (`index.html`): presentación de la tienda y juego destacado.
 - **Catálogo** (`catalago.html`): tendencias, reservas y selección por plataforma.
 - **Páginas por plataforma** (`pc.html`, `playstation.html`, `switch.html`, `xbox.html`): juegos agrupados por plataforma.
+- **Fichas de juegos** (`<juego>.html`): páginas individuales con descripción, portada y plataformas; se abren desde las tarjetas del catálogo.
 - **Sobre nosotros** (`sobrenosotros.html`): presentación y valores de la tienda.
 - **Contacto** (`contacto.html`): formulario visual para enviar consultas.
 - **Producto** (`producto.html`): página de producto en construcción.
