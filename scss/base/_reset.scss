@@ -1,0 +1,141 @@
+:root {
+    color-scheme: light;
+    --color-fondo: #f5f6fa;
+    --color-superficie: #ffffff;
+    --color-texto: #202235;
+    --color-texto-secundario: #666a7d;
+    --color-principal: #5741a6;
+    --color-principal-hover: #443282;
+    --color-acento: #f2c94c;
+    --color-borde: #e2e4ed;
+    --ancho-contenido: 1200px;
+    --radio: 12px;
+    --sombra: 0 8px 24px rgb(32 34 53 / 8%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    min-width: 320px;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--color-principal);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-principal-hover);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--color-acento);
+    outline-offset: 3px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+h2 {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+p {
+    color: var(--color-texto-secundario);
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 12px;
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    background: var(--color-superficie);
+    color: var(--color-texto);
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.contenedor {
+    width: min(90%, var(--ancho-contenido));
+    margin-inline: auto;
+}
+
+main {
+    min-height: 60vh;
+    padding-block: 40px 64px;
+}
+
+@media (max-width: 760px) {
+    main {
+        padding-block: 28px 48px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        width: min(92%, var(--ancho-contenido));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
